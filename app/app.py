@@ -25,4 +25,3 @@ def get_post_id(id:int):
 @app.post("/posts")
 def create_post(post:PostCreate):
     text_posts[max(text_posts.keys())+1]={"title":PostCreate.title,"content":PostCreate.content}
-    
